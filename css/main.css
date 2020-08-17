@@ -1,0 +1,250 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+/* MONTSERAT */
+
+/* Montserrat-300 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/montserrat/Montserrat-Light.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/montserrat/Montserrat-Italic.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/montserrat/Montserrat-BoldItalic.ttf");
+  /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/montserrat/montserrat-v12-latin-900.ttf"),
+    url("../fonts/montserrat/montserrat-v12-latin-900.eot")
+      format("embedded-opentype"),
+    url("../fonts/montserrat/montserrat-v12-latin-900.svg") format("woff2"),
+    url("../fonts/montserrat/montserrat-v12-latin-900.woff") format("woff"),
+    url("../fonts/montserrat/montserrat-v12-latin-900.woff2") format("truetype");
+}
+/* MONTSERAT ENDS */
+body {
+  font-family: "Montserrat";
+}
+.text-center {
+  text-align: center;
+}
+.index-body {
+  background: url("../images/index-bg.svg") no-repeat center center fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  filter: blur(100);
+}
+.register-body {
+  background: url("../images/register-bg.svg") no-repeat center center fixed;
+  background-color: #c90706;
+  background-size: cover;
+  filter: blur(100);
+}
+.login-body {
+  background: url("../images/login-bg.svg") no-repeat center center fixed;
+  background-color: #c90706;
+  background-size: cover;
+  filter: blur(100);
+}
+/* INDEX PAGE CSS */
+
+/* .navbar {
+  list-style-type: none;
+  display: flex;
+}
+.navbar .logo {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  width: 46px;
+  height: 67px;
+  margin: 10px;
+} */
+.index-body .container {
+  text-align: center;
+}
+.index-body .main-title {
+  color: #fff;
+  margin-top: 190px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px #000;
+}
+.rectangle-row {
+  margin-top: 60px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  margin-bottom: 200px;
+}
+.rectangle-row .col-md-4 {
+  margin: auto;
+}
+
+/* for mobile devices */
+@media screen and (max-width: 420px) {
+  .rectangle-row .col-md-4 {
+    margin: 10px;
+  }
+}
+
+.rectangle-row select {
+  height: auto !important;
+  padding: 20px !important;
+  border-radius: 5px !important;
+  background: #fff;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.rectangle-row select > option {
+  background: #fff;
+  font-style: normal;
+  margin-top: 20px !important;
+  padding: 40px !important;
+}
+.rectangle-row .search-btn {
+  text-align: center;
+  padding: 16px !important;
+  background: #c80807;
+  border-radius: 4px;
+  color: #fff;
+  width: 200px;
+}
+/* INDEX PAGE CSS ENDS */
+
+/* Result page CSS */
+.result-body {
+  background: url(../images/result-bg.svg);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.result-hr {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #282828;
+}
+.result-card {
+  border: 0;
+}
+.result-btn {
+  background: #c80807;
+  color: #fff;
+  width: 120px;
+}
+.big-icon {
+  font-size: 30px !important;
+}
+.footer {
+  /* position: absolute; */
+  margin-top: 170px;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  line-height: 60px;
+  background-color: #000;
+  padding: 40px;
+  color: #fff;
+}
+.footer p {
+  font-size: 16px;
+  line-height: 33px;
+}
+/* Result page CSS ends */
+
+/* Checkout page css */
+.carousel{
+  padding: 20px;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.billing-info, .summary{
+  padding: 23px;
+}
+.billing-info .form-control {
+  font-size: 20px;
+}
+/* Checkout page css */
+
+/* LOGIN AND SIGN UP PAGE CSS*/
+.form-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.input-group-text {
+  border-radius: 0 !important;
+  font-size: 28px !important;
+  font-weight: bolder;
+  background: transparent;
+  border-right-color: transparent !important;
+  color: #c90706;
+  background: rgb(247, 243, 243);
+}
+.signup-form .form-control {
+  border-radius: 0 !important;
+  padding: 10px !important;
+  border-left: 0;
+  background: rgb(247, 243, 243);
+  font-size: 20px;
+}
+.form-control:hover {
+  background: #eee;
+}
+.form-control::placeholder {
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  margin-left: 5px;
+}
+.label-agree-term {
+  margin: 7px;
+}

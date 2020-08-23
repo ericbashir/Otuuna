@@ -85,9 +85,10 @@ body {
   color: #222;
   font-weight: 400;
   padding: 115px 0;
+  padding-bottom: 0;
 }
 
-.container {
+.container.login-container {
   width: 660px;
   position: relative;
   margin: 0 auto;

@@ -85,23 +85,18 @@ body {
   background: url("../images/login-bg.svg") no-repeat center center fixed;
   background-color: #c90706;
   background-size: cover;
-  filter: blur(100);
+  /* filter: blur(100); */
 }
 /* INDEX PAGE CSS */
 
-/* .navbar {
-  list-style-type: none;
-  display: flex;
+.nav-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 15px;
 }
-.navbar .logo {
-  position: fixed;
-  bottom: 0;
-  top: 0;
-  width: 46px;
-  height: 67px;
-  margin: 10px;
-} */
-.index-body .container {
+
+.index-body .main-container {
   text-align: center;
 }
 .index-body .main-title {
@@ -162,6 +157,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.about-body {
+  background: url(../images/register-bg.svg);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.faq-body {
+  background: url(../images/faq-bg.svg);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .result-hr {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -196,7 +205,7 @@ body {
 /* Result page CSS ends */
 
 /* Checkout page css */
-.carousel{
+.carousel {
   padding: 20px;
 }
 .carousel-indicators li {
@@ -204,7 +213,8 @@ body {
   height: 10px;
   border-radius: 100%;
 }
-.billing-info, .summary{
+.billing-info,
+.summary {
   padding: 23px;
 }
 .billing-info .form-control {
